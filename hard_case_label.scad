@@ -7,15 +7,31 @@
         - https://creativecommons.org/licenses/by/4.0/
     
     for case models:
-    - pelican 1550 : case #1
-    - pelican 1600 : case #1
-    - pelican 1560 : case #2
-    - pelican 1720 : case #2
-    -  apache 9800 : case #2
-    - pelican 1620 : case #3
-    - pelican 1470 : case #4
-    -  apache 3800 : case #5
-    -  apache 4800 : case #5
+        - Case Number 1
+            - Pelican 1400
+            - Pelican 1500
+            - Pelican 1550
+            - Pelican 1600
+        - Case Number 2
+            - Pelican 1460
+            - Pelican 1560
+            - Pelican 1610
+            - Pelican 1620
+            - Pelican 1660
+            - Pelican 1720
+            - Apache 9800
+        - Case Number 3
+            - Pelican 1620
+        - Case Number 4
+            - Pelican 1470
+        - Case Number 5
+            - Apache 2800
+            - Apache 3800
+            - Apache 4800
+
+Thanks to users:
+    - [PegaChris](https://www.thingiverse.com/pegachris/designs) for testing the fitment on Pelican case models: 1460, 1610, 1620, 1660, 1500, and 1600.
+    - [Papa_Z](https://www.thingiverse.com/papa_z/designs) for testing the fitment of Apache case model: 2800
 */
 
 //////////////////////////////////////////////////////////////////////
@@ -75,66 +91,35 @@ font_spacing = 2;
 
 module __Customizer_Limit__ () {} // remove case from customizer
 cases = [
-    /* 
-        case number : 1
-        
-        fits:
-        - pelican 1550
-        - pelican 1600 
-    */
+    // case number : 1
     [
         118.8,  // top width
         116.8,  // bottom width
         25,     // height
         3.1     // thickness
     ],
-    /* 
-        case number : 2
-        
-        fits:
-        - pelican 1560 
-        - pelican 1720
-        - apache 9800
-    */
+    // case number : 2
     [
         121.8,  // top width
         120.6,  // bottom width
         25,     // height
         3.1     // thickness
     ],
-    /* 
-        case number : 3
-        
-        fits:
-        - pelican 1620
-    */
+    // case number : 3
     [
         121.8,  // top width
         119.6,  // bottom width
         25,     // height
         3.1     // thickness
     ],
-    /* 
-        case number : 4
-        
-        only uses top_string, no bottom_string
-        
-        fits:
-        - pelican 1470
-    */
+    // case number : 4
     [
         102.8,  // top width
         101.4,  // bottom width
         16,     // height
         3.1     // thickness
     ],
-    /* 
-        case number : 5
-        
-        fits:
-        - apache 3800
-        - apache 4800
-    */
+    // case number : 5
     [
         120.9,  // top width
         118.6,  // bottom width
